@@ -103,61 +103,100 @@
 
             </div>
         </section>
-
-        <!-- Team-->
-        <section class="content-section" id="team">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h2 class="mb-5">Meet the team</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Maria Chatzigeorgiou </div>
-                                    <p class="mb-0">Product Director (CPO)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/maria.jpg" alt="..." />
-                        </a>
+<!-- Team Section -->
+<section class="content-section" id="team">
+    <div class="container px-4 px-lg-5">
+        <div class="content-section-heading text-center">
+            <h2 class="mb-5">Meet the team</h2>
+        </div>
+        <div class="row gx-0">
+            <!-- Team Member 1 -->
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#!">
+                    <div class="caption caption-bottom-left">
+                        <div class="caption-content">
+                            <div class="h2">Maria Chatzigeorgiou</div>
+                            <p class="mb-0">Product Director (CPO)</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Marthe Meijer</div>
-                                    <p class="mb-0">Financial Director (CFO)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Portrait_Meijer.Marthe.JPG" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Misha Midavoodi</div>
-                                    <p class="mb-0">Founder (CEO)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/misha.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stijn Mevis</div>
-                                    <p class="mb-0">Marketing Director (CMO)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/stijn.jpg" alt="..." />
-                        </a>
-                    </div>
-                </div>
+                    <img class="img-fluid team-image" src="assets/img/maria.jpg" alt="Maria Chatzigeorgiou" />
+                </a>
             </div>
-        </section>
+            <!-- Team Member 2 (Adjusted Image Down) -->
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#!">
+                    <div class="caption caption-bottom-left">
+                        <div class="caption-content">
+                            <div class="h2">Marthe Meijer</div>
+                            <p class="mb-0">Financial Director (CFO)</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid team-image team-image-adjust" src="assets/img/Portrait_Meijer.Marthe.JPG" alt="Marthe Meijer" />
+                </a>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#!">
+                    <div class="caption caption-bottom-left">
+                        <div class="caption-content">
+                            <div class="h2">Misha Midavoodi</div>
+                            <p class="mb-0">Founder (CEO)</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid team-image" src="assets/img/misha.jpg" alt="Misha Midavoodi" />
+                </a>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#!">
+                    <div class="caption caption-bottom-left">
+                        <div class="caption-content">
+                            <div class="h2">Stijn Mevis</div>
+                            <p class="mb-0">Marketing Director (CMO)</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid team-image" src="assets/img/stijn.jpg" alt="Stijn Mevis" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Inline CSS -->
+<style>
+    /* Default Image Styling */
+    .team-image {
+        width: 100%;
+        height: 400px; /* Fixed height for consistency */
+        object-fit: cover; /* Prevent image distortion */
+    }
+
+    /* Adjust Team Member 2 Image Down */
+    .team-image-adjust {
+        object-position: top 20%; /* Shift focus downward */
+    }
+
+    /* Bottom-Left Caption Styling */
+    .caption {
+        position: relative;
+    }
+
+    .caption-bottom-left .caption-content {
+        position: absolute;
+        bottom: 10px; /* Text at the bottom */
+        left: 10px; /* Align text to the left */
+        color: white; /* White text for contrast */
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Optional: Add slight text shadow */
+    }
+
+    /* Ensure Consistent Margin */
+    .portfolio-item {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+
         <!-- Callout-->
 
         <!-- Why us-->
